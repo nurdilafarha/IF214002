@@ -40,4 +40,4 @@ Aplikasi ini bertujuan untuk menghubungkan antara pengguna dengan kolektor baran
 - Nomor Rekening
 
 ### ERD
-![alt text](https://github.com/nurdilafarha/IF214002/blob/main/pertemuan2/erd.jpg)
+![alt text](https://github.com/nurdilafarha/IF214002/blob/main/pertemuan2/ERD.png)
