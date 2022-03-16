@@ -1,34 +1,40 @@
-# Aplikasi Layanan Pengumpulan Barang Bekas
+# Aplikasi Penjualan Barang Bekas
 
 ## Deskripsi
-Aplikasi ini dibuat untuk mengumpulkan barang bekas dari rumah-rumah untuk dibawa ke tempat pengumpulan barang bekas. Fitur-fitur utama aplikasi tersebut adalah sebagai berikut:
+Aplikasi ini bertujuan untuk menghubungkan antara pengguna dengan kolektor barang bekas.
 
-- Mendata pesanan pengambilan barang bekas
-- Melakukan pengambilan barang bekas ke rumah pelanggan
-- Mentransfer sejumlah uang kepada pelanggan sesuai berat barang yang dikumpulkan
+## Fitur Fitur
+- Melakukan pemesanan penjualan barang bekas
+- Melakukan pencarian kolektor terdekat
+- Mengambil barang bekas ke rumah pengguna
+- Melakukan pembayaran hasil penjualan
 
 ## Entitas dan Atribut
-### Pelanggan
+### Pengguna
 - Nama
 - ID
-- NIK
+- Alamat
+- Kontak
+- Email
+
+### Kolektor
+- Nama
+- ID
 - Alamat
 - Kontak
 
-### Kurir
-- Nama
-- ID
-- Kontak
+### Pemesanan
+- ID 
+- ID kolektor
+- ID pengguna
+- Lokasi
+- Waktu
 
-### Pesanan
-- ID
-- ID kurir
-- ID pelanggan
-- Jenis Barang
-- Lokasi pengambilan
-- Waktu pengambilan
+### Barang
+- Jenis
+- Jumlah
 
 ### Pembayaran
-- ID pesanan
-- Berat barang
-- Nomor rekening pelanggan
+- ID pemesanan
+- Total Harga
+- Nomor Rekening
