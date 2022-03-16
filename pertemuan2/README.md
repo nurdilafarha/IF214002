@@ -38,3 +38,6 @@ Aplikasi ini bertujuan untuk menghubungkan antara pengguna dengan kolektor baran
 - ID pemesanan
 - Total Harga
 - Nomor Rekening
+
+### ERD
+![alt text](https://github.com/nurdilafarha/IF214002/blob/main/pertemuan2/erd.jpg)
