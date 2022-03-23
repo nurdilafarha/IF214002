@@ -11,38 +11,44 @@ Aplikasi ini bertujuan untuk menghubungkan antara pengguna dengan kolektor baran
 
 ## Entitas dan Atribut
 ### Pengguna
-- \* ID
-- Nama
-- Alamat
-- Kontak
-- Email
+- \* Id_pengguna
+- Nama_penggguna
+- Alamat_pengguna
+- Kontak_pengguna
+- Email_pengguna
 
 ### Kolektor
-- \* ID
-- Nama
-- Alamat
-- Kontak
+- \* Id_kolektor
+- Nama_kolektor
+- Alamat_kolektor
+- Kontak_kolektor
 
 ### Pemesanan
-- \* ID 
-- ID kolektor
-- ID pengguna
-- Lokasi
-- Waktu
+- \* Id_pemesanan
+- Id_kolektor
+- Id_pengguna
+- Id_barang
+- Lokasi_pemesanan
+- Waktu_pemesanan
+- Tanggal_pemesanan
 
 ### Barang
-- Jenis
-- Jumlah
+- \* Id_barang
+- Jumlah_barang
+- Kode_barang
+- Berat_barang
 
 ### Pembayaran
-- ID pemesanan
-- Total Harga
-- \* Nomor Rekening
+- \* Id_pembayaran
+- \* No_rek
+- Id_pemesanan
+- Berat_barang  
+- Total_harga
 
 ### Relationship
 - Pengguna 1 1 - 0 N Pemesanan
 - Pemesanan 1 1 - 1 N Barang
 - Pengguna 1 1 - 0 N Barang
-- Barang N 1 - 1 1 Kolektor
-- Kolektor 1 1 - 1 N Pembayaran
-- Pembayaran N 0 - 1 N Pengguna
+- Barang N 0 - 1 1 Kolektor
+- Kolektor 1 1 - 0 N Pembayaran
+- Pembayaran N 0 - 1 1 Pengguna
