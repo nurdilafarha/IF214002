@@ -1,7 +1,7 @@
 # Aplikasi Penjualan Barang Bekas
 
 ## Deskripsi
-Aplikasi ini bertujuan untuk menghubungkan antara pengguna dengan kolektor barang bekas.
+Aplikasi ini bertujuan untuk menghubungkan antara pengguna dengan kolektor barang bekas agar proses jual beli barang bekas menjadi lebih mudah.
 
 ## Fitur Fitur
 - Melakukan pemesanan penjualan barang bekas
@@ -11,33 +11,39 @@ Aplikasi ini bertujuan untuk menghubungkan antara pengguna dengan kolektor baran
 
 ## Entitas dan Atribut
 ### Pengguna
-- Nama
-- ID
-- Alamat
-- Kontak
-- Email
+- \* Id_pengguna
+- Nama_penggguna
+- Alamat_pengguna
+- Kontak_pengguna
+- Email_pengguna
 
 ### Kolektor
-- Nama
-- ID
-- Alamat
-- Kontak
+- \* Id_kolektor
+- Nama_kolektor
+- Alamat_kolektor
+- Kontak_kolektor
 
 ### Pemesanan
-- ID 
-- ID kolektor
-- ID pengguna
-- Lokasi
-- Waktu
+- \* Id_pemesanan
+- Id_kolektor
+- Id_pengguna
+- Id_barang
+- Lokasi_pemesanan
+- Waktu_pemesanan
+- Tanggal_pemesanan
 
 ### Barang
-- Jenis
-- Jumlah
+- \* Id_barang
+- Jumlah_barang
+- Kode_barang
+- Berat_barang
 
 ### Pembayaran
-- ID pemesanan
-- Total Harga
-- Nomor Rekening
+- \* Id_pembayaran
+- \* No_rek
+- Id_pemesanan
+- Berat_barang  
+- Total_harga
 
 ### ERD
-![alt text](https://github.com/nurdilafarha/IF214002/blob/main/pertemuan2/ERD.png)
+![alt text](https://github.com/nurdilafarha/IF214002/blob/main/pertemuan2/ERD%20database.png)
