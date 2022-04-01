@@ -11,39 +11,47 @@ Aplikasi ini bertujuan untuk menghubungkan antara pengguna dengan kolektor baran
 
 ## Entitas dan Atribut
 ### Pengguna
-- \* Id_pengguna
-- Nama_penggguna
-- Alamat_pengguna
-- Kontak_pengguna
-- Email_pengguna
+- ID
+- Nama
+- Alamat
+- Kontak
+- Email
+- No Rekening
 
 ### Kolektor
-- \* Id_kolektor
-- Nama_kolektor
-- Alamat_kolektor
-- Kontak_kolektor
+- ID
+- Nama
+- Alamat
+- Kontak
 
 ### Pemesanan
-- \* Id_pemesanan
-- Id_kolektor
-- Id_pengguna
-- Id_barang
-- Lokasi_pemesanan
-- Waktu_pemesanan
-- Tanggal_pemesanan
+- ID
+- ID kolektor
+- ID pengguna
+- ID barang
+- Lokasi
+- Waktu
+- Tanggal
 
 ### Barang
-- \* Id_barang
-- Jumlah_barang
-- Kode_barang
-- Berat_barang
+- ID
+- Jumlah
+- Jenis
+- Berat
 
 ### Pembayaran
-- \* Id_pembayaran
-- \* No_rek
-- Id_pemesanan
-- Berat_barang  
-- Total_harga
+- ID
+- ID detail pembayaran
+- ID pemesanan
+- Total harga
+- Rekening pengguna
+
+### Detail Pembayaran
+- ID
+- ID pembayaran
+- Jenis barang
+- Berat barang
+- Harga
 
 ### ERD
 ![alt text](https://github.com/nurdilafarha/IF214002/blob/main/pertemuan2/ERD%20database.png)
