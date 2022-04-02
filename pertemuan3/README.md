@@ -60,3 +60,4 @@ Aplikasi ini bertujuan untuk menghubungkan antara pengguna dengan kolektor baran
 - Barang N 0 - 1 1 Kolektor
 - Kolektor 1 1 - 0 N Pembayaran
 - Pembayaran N 0 - 1 1 Pengguna
+- Pembayaran 1 1 - 1 N Detail Pembayaran
