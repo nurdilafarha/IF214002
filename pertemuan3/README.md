@@ -61,3 +61,6 @@ Aplikasi ini bertujuan untuk menghubungkan antara pengguna dengan kolektor baran
 - Kolektor 1 1 - 0 N Pembayaran
 - Pembayaran N 0 - 1 1 Pengguna
 - Pembayaran 1 1 - 1 N Detail Pembayaran
+
+### Tabel Relasi
+![tabel relasi](https://github.com/nurdilafarha/IF214002/blob/main/pertemuan3/Tabel%20Relasi.png)
