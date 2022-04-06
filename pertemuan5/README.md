@@ -15,6 +15,7 @@ Aplikasi ini bertujuan untuk menghubungkan antara pengguna dengan kolektor baran
 - Alamat
 - Kontak
 - Email
+- Password
 - No Rekening
 
 ### Kolektor
@@ -22,6 +23,8 @@ Aplikasi ini bertujuan untuk menghubungkan antara pengguna dengan kolektor baran
 - Nama
 - Alamat
 - Kontak
+- Email
+- Password
 
 ### Pemesanan
 - \* ID
