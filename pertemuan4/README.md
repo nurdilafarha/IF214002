@@ -5,7 +5,6 @@ Aplikasi ini bertujuan untuk menghubungkan antara pengguna dengan kolektor baran
 
 ## Fitur Fitur
 - Melakukan pemesanan penjualan barang bekas
-- Melakukan pencarian kolektor terdekat
 - Mengambil barang bekas ke rumah pengguna
 - Melakukan pembayaran hasil penjualan
 
@@ -52,3 +51,12 @@ Aplikasi ini bertujuan untuk menghubungkan antara pengguna dengan kolektor baran
 - Jenis barang
 - Berat barang
 - Harga
+
+### Relationship
+- Pengguna 1 1 - 0 N Pemesanan
+- Pemesanan 1 1 - 1 N Barang
+- Pengguna 1 1 - 0 N Barang
+- Barang N 0 - 1 1 Kolektor
+- Kolektor 1 1 - 0 N Pembayaran
+- Pembayaran N 0 - 1 1 Pengguna
+- Pembayaran 1 1 - 1 N Detail Pembayaran
