@@ -40,6 +40,21 @@
 
 ---
 Normalisasi Bentuk ke 1 :
-Aturan : 1. Harus memiliki Primary Key
-         2. Tidak boleh ada sel yang bernilai lebih dari satu
+
+Aturan : Harus memiliki Primary Key, Tidak boleh ada sel yang bernilai lebih dari satu
+
 Karena semua tabel sudah memiliki primary key dan semua sel tidak bernilai lebh dari satu maka tabel sudah tersertifikasi normalisasi bentuk ke 1
+
+---
+Normalisasi Bentuk ke 2 :
+
+Aturan : Harus tersertifikasi normalisasi bentuk 1, Tidak boleh ada kolom non-key yang bergantung pada sebagian dari composite key
+
+karena semua tabel sudah tersertifikasi normalisasi bentuk 1 dan tidak ada kolom non-key yang bergantung pada sebagian dari composite key, maka tabel sudah tersertifikasi normalisasi bentuk ke 2
+
+---
+Normalisasi Bentuk ke 3 :
+
+Aturan : Harus tersertifikasi normalisasi bentuk 2, Kolom non-key hanya boleh bergantung kepada primary key, tidak boleh ada ketergantungan tambahan ke kolom non-key lainnya
+
+
