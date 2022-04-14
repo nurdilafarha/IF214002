@@ -4,7 +4,7 @@
 - Data pengunjung tempat wisata
 
 ### ERD penyimpanan data karyawan
-
+![erd karyawan](https://github.com/nurdilafarha/IF214002/blob/main/pertemuan7/erd_karyawan.png)
 
 ```sql
 CREATE TABLE karyawan(
