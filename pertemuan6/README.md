@@ -9,64 +9,49 @@
     - Harus tersertifikasi normalisasi bentuk 2
     - Kolom non-key hanya boleh bergantung kepada primary key, tidak boleh ada ketergantungan tambahan ke kolom non-key lainnya
 
-## Sebelum Normalisasi
 
-#### Tabel Pengguna
-|🔑id_pengguna|nama|alamat|kontak|email|password|no_rek|
-|---|---|---|---|---|---|---|
-|1|Amel|Jalan ABC|08134526715|amel123@gmail.com|melamel|234561627|
-|2|Diana|Jalan Salak|0838456712|princesdiana@gmail.com|diana123|234767845|
+### Tabel Pengguna
+|🔑id_pengguna|nama|alamat|kontak|email|pass|
+|---|---|---|---|---|---|
+|11|Amel|Jalan ABC no 1|08134526715|amel123@gmail.com|melamel|
+|12|Diana|Jalan Salak 4|0838456712|princesdiana@gmail.com|diana123|
 
 ### Tabel Pemesanan
-|🔑id_pemesanan|id_pengguna|id_barang|lokasi_pemesanan|tanggal|waktu|
-|---|---|---|---|---|---|
-|1|1|135|Jalan ABC|13/03/2022|13.35|
-|1|1|136|Jalan ABC|13/03/2022|13.35|
-|2|2|136|Jalan Salak|22/03/2022|09.00|
+|🔑id_pemesanan|id_pengguna|id_kolektor|lokasi_pemesanan|waktu_pesan|
+|---|---|---|---|---|
+|1|11|01212|Jalan ABC no 1|2022-03-13 13:35:01|
+|1|11|01212|Jalan ABC no 1|2022-03-13 13:35:01|
+|2|12|13456|Jalan Salak 4|2022-04-01 09:00:00|
 
 ### Tabel Detail Pemesanan
-|🔑id_detail_pemesanan|id_pemesanan|id_barang|jumlah|
+|🔑id_detail_pemesanan|id_pemesanan|id_barang_jual|jumlah_barang_jual|
 |---|---|---|---|
 |01|1|135|50|
 |01|1|136|10|
 |02|2|136|20|
 
-### Tabel Barang
-|🔑id_barang|jenis|harga_perkilo|
+### Tabel Barang 
+|🔑id_barang_jual|jenis|harga_perkilo|
 |---|---|---|
 |135|Koran|4000|
 |136|Kardus|3000|
 |137|Kaleng|4500|
 
 ### Tabel Kolektor
-|🔑id_kolektor|nama|alamat|kontak|email|password|
+|🔑id_kolektor|nama|alamat|kontak|email|pass|
 |---|---|---|---|---|---|
-|1|Asep|Jalan stroberi|0835123456|asepstroberi@gmail.com|astro123|
-|1|Dani|Jalan mangga|08976132565|daniaja@gmail.com|danidani|
+|01212|Asep|Jalan stroberi|0835123456|asepstroberi@gmail.com|astro123|
+|13456|Dani|Jalan mangga|08976132565|daniaja@gmail.com|danidani|
 
 ### Tabel Pembayaran
-|🔑id_pembayaran|id_pemesanan|id_detail_pembayaran|total_harga|rekening_pengguna|
-|---|---|---|---|---|
-|1234|1|4321|18000|234561627|
-|1322|2|5243|12000|234767845|
+|🔑id_pembayaran|id_det_pemesanan|waktu_bayar|total_harga|
+|---|---|---|---|
+|56789|01|2022-03-13 14:00:01|18000|
+|76543|02|2022-04-01 11:21:14|12000|
 
 ### Tabel Detail Pembayaran
-|🔑id_detail_pembayaran|id_pembayaran|id_barang|berat_barang|harga|
-|---|---|---|---|---|
-|4321|1234|135|3|12000|
-|4321|1234|136|2|6000|
-|5243|1322|136|4|12000|
-
----
-Normalisasi Bentuk ke 1 :
-
-Karena semua tabel sudah memiliki primary key dan semua sel tidak bernilai lebh dari satu maka tabel sudah tersertifikasi normalisasi bentuk ke 1
-
----
-Normalisasi Bentuk ke 2 :
-
-
----
-Normalisasi Bentuk ke 3 :
-
-
+|🔑id_pembayaran|id_barang_jual|berat_barang|harga|
+|---|---|---|---|
+|56789|135|3|12000|
+|56789|136|2|6000|
+|76543|136|4|12000|
