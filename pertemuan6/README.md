@@ -39,8 +39,8 @@
 
 ### Tabel Admin
 |🔑id_admin|nama|kontak|email|pass|
-|---|---|---|---|---|---|
-|00123|Riri|Jalan nusa indah II|083756431277|ariana@gmail.com|rianari|
+|---|---|---|---|---|
+|00123|Riri|083756431277|ariana@gmail.com|rianari|
 
 ### Tabel Kolektor
 |🔑id_kolektor|nama|alamat|kontak|email|pass|
