@@ -20,7 +20,7 @@ B. Buat list fitur-fitur yang ada pada solusi digital tersebut
 - Melakukan pembayaran hasil penjualan kepada pengguna
 
 C. Buat ERD notasi Chen dari struktur data yang mewakili fitur-fitur di solusi digital tersebut
-
+![erd chen](https://github.com/nurdilafarha/IF214002/blob/main/uts/ERD%20database__update.png)
 
 D. Buat ERD notasi Crow Foot dari struktur data logical yang mewakili fitur-fitur di solusi digital tersebut, lengkap dengan keys, tipe data, dan normalisasi bentuk ke 3
 ![erd crow foot](https://github.com/nurdilafarha/IF214002/blob/main/uts/ERD%20crow_foot.png)
