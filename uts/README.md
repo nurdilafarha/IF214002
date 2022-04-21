@@ -23,3 +23,4 @@ C. Buat ERD notasi Chen dari struktur data yang mewakili fitur-fitur di solusi d
 ![erd notasi chen](https://github.com/nurdilafarha/IF214002/blob/main/uts/ERD%20database_update.png)
 
 D. Buat ERD notasi Crow Foot dari struktur data logical yang mewakili fitur-fitur di solusi digital tersebut, lengkap dengan keys, tipe data, dan normalisasi bentuk ke 3
+![erd crow foot](https://github.com/nurdilafarha/IF214002/blob/main/uts/ERD%20crow_foot.png)
