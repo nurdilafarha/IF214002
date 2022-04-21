@@ -17,11 +17,11 @@
 |12|Diana|Jalan Salak 4|0838456712|princesdiana@gmail.com|diana123|
 
 ### Tabel Pemesanan
-|🔑id_pemesanan|id_pengguna|id_kolektor|lokasi_pemesanan|waktu_pesan|
+|🔑id_pemesanan|id_pengguna|id_admin_yg_konfirmasi|lokasi_pemesanan|waktu_pesan|
 |---|---|---|---|---|
-|1|11|01212|Jalan ABC no 1|2022-03-13 13:35:01|
-|1|11|01212|Jalan ABC no 1|2022-03-13 13:35:01|
-|2|12|13456|Jalan Salak 4|2022-04-01 09:00:00|
+|1|11|00123|Jalan ABC no 1|2022-03-13 13:35:01|
+|1|11|00123|Jalan ABC no 1|2022-03-13 13:35:01|
+|2|12|00123|Jalan Salak 4|2022-04-01 09:00:00|
 
 ### Tabel Detail Pemesanan
 |🔑id_detail_pemesanan|id_pemesanan|id_barang_jual|jumlah_barang_jual|
@@ -36,6 +36,11 @@
 |135|Koran|4000|
 |136|Kardus|3000|
 |137|Kaleng|4500|
+
+### Tabel Admin
+|🔑id_admin|nama|kontak|email|pass|
+|---|---|---|---|---|---|
+|00123|Riri|Jalan nusa indah II|083756431277|ariana@gmail.com|rianari|
 
 ### Tabel Kolektor
 |🔑id_kolektor|nama|alamat|kontak|email|pass|
