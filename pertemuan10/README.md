@@ -1,5 +1,6 @@
 ## Cheatsheet 
 ![cheatsheet1](https://github.com/nurdilafarha/IF214002/blob/main/pertemuan10/sql_cheatsheet.png)
+![cheatsheet](https://github.com/nurdilafarha/IF214002/blob/main/pertemuan10/sql_cheatssheet2.png)
 
 ## Query 
 
