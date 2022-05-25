@@ -19,9 +19,8 @@
 ### Tabel Pemesanan
 |🔑id_pemesanan|id_pengguna|id_admin_yg_konfirmasi|lokasi_pemesanan|waktu_pesan|
 |---|---|---|---|---|
-|1|11|00123|Jalan ABC no 1|2022-03-13 13:35:01|
-|1|11|00123|Jalan ABC no 1|2022-03-13 13:35:01|
-|2|12|00123|Jalan Salak 4|2022-04-01 09:00:00|
+|1|11|00123|Jalan ABC no 1|2022-03-13 13:35:01.234|
+|2|12|00123|Jalan Salak 4|2022-04-01 09:00:00.000|
 
 ### Tabel Detail Pemesanan
 |🔑id_detail_pemesanan|id_pemesanan|id_barang_jual|jumlah_barang_jual|
