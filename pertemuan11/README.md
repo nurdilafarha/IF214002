@@ -97,3 +97,12 @@ INSERT INTO detail_pembayaran (id_pembayaran, id_barang_jual, berat_barang, harg
 ```
 
 ## DQL
+- SELECT
+```sql
+SELECT * FROM pemesanan WHERE id_pengguna=12
+```
+- COUNT
+```sql
+SELECT count(*) from pengguna
+```
+
