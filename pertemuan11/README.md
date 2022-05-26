@@ -95,6 +95,11 @@ INSERT INTO pembayaran (id_pembayaran, id_det_pemesanan, waktu_bayar, total_harg
 INSERT INTO detail_pembayaran (id_pembayaran, id_barang_jual, berat_barang, harga) VALUES (56789,135,3,12000);
 INSERT INTO detail_pembayaran (id_pembayaran, id_barang_jual, berat_barang, harga) VALUES (76543,136,4,12000);
 ```
+- UPDATE
+```sql
+UPDATE kolektor SET pass = "aseppp" WHERE id_kolektor = 01212
+UPDATE kolektor SET id_kolektor = 01313 WHERE kolektor.nama = "Dani"
+```
 
 ## DQL
 - SELECT
@@ -105,4 +110,3 @@ SELECT * FROM pemesanan WHERE id_pengguna=12
 ```sql
 SELECT count(*) from pengguna
 ```
-
