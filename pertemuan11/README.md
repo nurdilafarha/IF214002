@@ -110,3 +110,10 @@ SELECT * FROM pemesanan WHERE id_pengguna=12
 ```sql
 SELECT count(*) from pengguna
 ```
+- JOIN (menampilkan pengguna dan barang yang dijualnya)
+```sql
+SELECT pengguna.id_pengguna, pengguna.nama, pemesanan.id_pemesanan, detail_pemesanan.id_det_pemesanan, detail_pemesanan.id_barang_jual
+FROM pemesanan
+JOIN pengguna ON pengguna.id_pengguna = pemesanan.id_pengguna
+JOIN detail_pemesanan ON detail_pemesanan.id_det_pemesanan = pemesanan.id_pemesanan
+```
