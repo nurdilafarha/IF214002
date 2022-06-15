@@ -8,6 +8,8 @@
   - Visualisasi : bar chart
   - Data : bulan, tahun, jenis barang, jumlah barang(Kg)
   
+  ![bulanan](https://github.com/nurdilafarha/IF214002/blob/main/pertemuan14/barangterjualbulanan.png)
+  
 - Ingin tahu perkembangan penjualan perminggu
   - Visualisasi : line chart
   - Data : minggu ke, bulan, tahun, jumlah barang(kg)
