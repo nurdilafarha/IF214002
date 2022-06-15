@@ -15,3 +15,11 @@
   - Data : minggu ke, bulan, tahun, jumlah barang(kg)
   
   ![perminggu](https://github.com/nurdilafarha/IF214002/blob/main/pertemuan14/perkmbgnperminggu.png)
+ 
+---
+- melihat jenis barang bekas yang paling banyak dijual perbulan
+```sql
+SELECT detail_pemesanan.id_pemesanan, barang_jual.jenis, detail_pemesanan.jumlah_barang_jual 
+FROM detail_pemesanan
+INNER JOIN barang_jual ON detail_pemesanan.id_barang_jual = barang_jual.id_barang_jual;
+```
