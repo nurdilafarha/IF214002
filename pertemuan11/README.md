@@ -90,6 +90,9 @@ INSERT INTO detail_pemesanan (id_det_pemesanan, id_pemesanan, id_barang_jual, ju
 INSERT INTO barang_jual (id_barang_jual, jenis, harga_perkilo) VALUES (135,"Koran",4000);
 INSERT INTO barang_jual (id_barang_jual, jenis, harga_perkilo) VALUES (136,"Kardus",3000);
 INSERT INTO barang_jual (id_barang_jual, jenis, harga_perkilo) VALUES (137,"Kaleng",4500);
+INSERT INTO barang_jual (id_barang_jual, jenis, harga_perkilo) VALUES (138,"Besi",6000);
+INSERT INTO barang_jual (id_barang_jual, jenis, harga_perkilo) VALUES (139,"Botol plastik",3000);
+INSERT INTO barang_jual (id_barang_jual, jenis, harga_perkilo) VALUES (140,"Tembaga",7000);
 
 INSERT INTO admin (id_admin, nama, kontak, email, pass) VALUES (00123,"Riri","083756431277","ariana@gmail.com","rianari");
 
