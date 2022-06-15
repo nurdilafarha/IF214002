@@ -69,8 +69,10 @@ CREATE TABLE detail_pembayaran (
 );
 ```
 - ALTER TABLE
+```sql
 ALTER TABLE detail_pemesanan ADD COLUMN(satuan VARCHAR(2) NOT NULL);
 ALTER TABLE detail_pembayaran ADD COLUMN(satuan VARCHAR(2) NOT NULL);
+```
 
 ## DML
 - INSERT 
