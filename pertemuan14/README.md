@@ -13,3 +13,5 @@
 - Ingin tahu perkembangan penjualan perminggu
   - Visualisasi : line chart
   - Data : minggu ke, bulan, tahun, jumlah barang(kg)
+  
+  ![perminggu](https://github.com/nurdilafarha/IF214002/blob/main/pertemuan14/perkmbgnperminggu.png)
