@@ -17,9 +17,28 @@
   ![perminggu](https://github.com/nurdilafarha/IF214002/blob/main/pertemuan14/perkmbgnperminggu.png)
  
 ---
-- melihat jenis barang bekas yang paling banyak dijual perbulan
+- melihat perkembangan pemesanan dalam 1 bulan
 ```sql
-SELECT detail_pemesanan.id_pemesanan, barang_jual.jenis, detail_pemesanan.jumlah_barang_jual 
-FROM detail_pemesanan
-INNER JOIN barang_jual ON detail_pemesanan.id_barang_jual = barang_jual.id_barang_jual;
+SELECT COUNT(waktu_pesan) AS jml_pemesanan,
+	(
+        SUM(
+            CASE WHEN waktu_pesan >= '2022-06-01' AND waktu_pesan < '2022-06-12' THEN 1 ELSE 0 END
+            )
+        ) AS minggu_1,
+        (
+        SUM(
+            CASE WHEN waktu_pesan >= '2022-06-12' AND waktu_pesan < '2022-06-19' THEN 1 ELSE 0 END
+            )
+        ) AS minggu_2,
+        (
+        SUM(
+            CASE WHEN waktu_pesan >= '2022-06-19' AND waktu_pesan < '2022-06-26' THEN 1 ELSE 0 END
+            )
+        ) AS minggu_3,
+        (
+        SUM(
+            CASE WHEN waktu_pesan >= '2022-06-26' AND waktu_pesan < '2022-07-01' THEN 1 ELSE 0 END
+            )
+        ) AS minggu_4
+FROM pemesanan;
 ```
