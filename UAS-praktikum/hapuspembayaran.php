@@ -1,0 +1,22 @@
+<?php
+require 'functions.php';
+
+$id = $_GET["id"];
+
+if( hapusbayar($id) > 0 ) {
+    echo "
+            <script>
+                alert('Data berhasil dihapus!');
+                document.location.href = 'pembayaran.php';
+            </script>
+        ";
+} else {
+    echo "
+            <script>
+                alert('Data gagal dihapus!');
+                document.location.href = 'pembayaran.php';
+            </script>
+        ";
+}
+
+?>
