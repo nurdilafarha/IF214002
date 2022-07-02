@@ -105,6 +105,13 @@ UPDATE kolektor SET pass = "aseppp" WHERE id_kolektor = 01212
 UPDATE kolektor SET id_kolektor = 01313 WHERE kolektor.nama = "Dani"
 ```
 ## DQL
+
+- Melihat data pembayaran tertinggi dalam seminggu
+```sql
+SELECT waktu_bayar, total_harga 
+        FROM pembayaran 
+        WHERE waktu_bayar >= '2022-06-01' AND waktu_bayar < '2022-06-12'
+```
 - Menampilkan data id pemesanan, id pengguna, serta waktu pemesanan selama seminggu
 ```sql
 SELECT pemesanan.id_pemesanan, pengguna.id_pengguna, pemesanan.waktu_pesan
